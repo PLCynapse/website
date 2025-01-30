@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLCynapse - Automazione Industriale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+
+        header {
+            background-color: #000000;
+            color: #f5f5f7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .nav-link {
+            color: #f5f5f7;
+        }
+
+        .nav-link:hover {
+            color: #a1a1a6;
+        }
+
+        .hero {
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+        }
+
+        .btn-warning {
+            background-color: #0071e3;
+            border: none;
+        }
+
+        .btn-warning:hover {
+            background-color: #005bb5;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #f5f5f7;
+        }
+
+        h3 {
+            color: #1d1d1f;
+        }
+
+        .form-control {
+            background-color: #f5f5f7;
+            border: 1px solid #d2d2d7;
+            color: #1d1d1f;
+        }
+
+        .form-control:focus {
+            border-color: #0071e3;
+            box-shadow: 0 0 0 0.2rem rgba(0, 113, 227, 0.25);
+        }
+
+        button.btn-primary {
+            background-color: #0071e3;
+            border: none;
+        }
+
+        button.btn-primary:hover {
+            background-color: #005bb5;
+        }
+
+        .logo span {
+            color: #ff5722;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="logo"> <span>PLC</span>ynapse</h1>
+        <nav class="nav">
+            <a class="nav-link" href="#about">Chi Siamo</a>
+            <a class="nav-link" href="#services">Servizi</a>
+            <a class="nav-link" href="#contact">Contatti</a>
+        </nav>
+    </header>
+
+    <div class="hero text-center py-5">
+        <h2 class="display-4">Innovazione nell'Automazione Industriale</h2>
+        <p class="lead">Soluzioni su misura per il tuo business con sviluppo software PLC, isole robotizzate e intelligenza artificiale.</p>
+        <a href="#contact" class="btn btn-warning btn-lg">Contattaci</a>
+    </div>
+
+    <div class="container py-5">
+        <section id="about" class="mb-5">
+            <h3 class="text-center mb-4">Chi Siamo</h3>
+            <p class="text-center">PLCynapse è un'azienda all'avanguardia nel settore dell'automazione industriale. Offriamo soluzioni innovative per migliorare l'efficienza, la produttività e la sicurezza dei tuoi processi produttivi.</p>
+        </section>
+
+        <section id="services" class="mb-5">
+            <h3 class="text-center mb-4">Servizi</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Sviluppo Software PLC</h4>
+                    <p>Creiamo software personalizzati per sistemi di controllo logico programmabile (PLC), ottimizzando i tuoi processi produttivi con tecnologie affidabili e scalabili.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Isole Robotizzate</h4>
+                    <p>Progettiamo e implementiamo soluzioni di robotica per automatizzare le tue operazioni industriali, migliorando la precisione e riducendo i tempi di ciclo.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Intelligenza Artificiale</h4>
+                    <p>Integriamo soluzioni di intelligenza artificiale per analizzare i dati in tempo reale e ottimizzare le prestazioni del tuo impianto produttivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3 class="text-center mb-4">Contattaci</h3>
+            <p class="text-center">Hai un progetto in mente? Siamo qui per aiutarti. Compila il form qui sotto o contattaci via email per discutere le tue esigenze.</p>
+            <form class="row g-3" action="https://formspree.io/f/mirco.golutti@plcynapse.com" method="POST">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Messaggio:</label>
+                    <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Invia</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="text-center py-3">
+        <p class="mb-0">&copy; 2025 PLCynapse. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
